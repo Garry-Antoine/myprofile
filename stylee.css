@@ -1,0 +1,143 @@
+
+html { 
+  
+  margin:0;
+  padding:0;
+  
+  -webkit-background-size: cover; 
+  background-size: cover; 
+}
+
+
+
+@-moz-keyframes anim {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+@-webkit-keyframes anim {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+@-o-keyframes anim {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+@-ms-keyframes anim {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+@keyframes anim {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+
+
+
+
+img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+
+
+.grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-gap: 24px;
+  justify-content: center;	
+  margin:72px 0 24px 0;
+  padding:0 24px;
+}
+
+@media (min-width:40em){
+  .grid{
+    grid-template-columns: repeat(auto-fill, 25em);
+    grid-auto-rows: 18em;
+    grid-auto-flow: row dense;
+  }
+}
+
+
+@media (min-width:54.5em){
+ .about{
+  grid-column-end: span 2;
+  font-size: 24px;
+ }
+}
+
+
+
+.s{
+  opacity:0;
+    -moz-animation: anim 3s linear forwards 2s;
+    -webkit-animation: anim 3s linear forwards 2s;
+    -o-animation: anim 3s linear forwards 2s;
+    -ms-animation: anim 3s linear forwards 2s;
+    animation: anim 3s linear forwards 2s;
+
+    border-radius: 10%;
+
+    text-align-last: center;
+
+  grid-column-end: span 1;
+  grid-row-end:span 1;
+}
+
+
+.m{
+  opacity:0;
+    -moz-animation: anim 2s linear forwards 3s;
+    -webkit-animation: anim 2s linear forwards 3s;
+    -o-animation: anim 2s linear forwards 3s;
+    -ms-animation: anim 2s linear forwards 3s;
+    animation: anim 2s linear forwards 3s;
+
+  text-align-last: center;
+
+    border-radius: 10%;
+
+  grid-column-end: span 1;
+  grid-row-end:span 2;
+}
+
+.l{
+  opacity:0;
+    -moz-animation: anim 2s linear forwards 1s;
+    -webkit-animation: anim 2s linear forwards 1s;
+    -o-animation: anim 2s linear forwards 1s;
+    -ms-animation: anim 2s linear forwards 1s;
+    animation: anim 2s linear forwards 1s;
+
+    border-radius: 10%;
+
+  grid-column-end: span 2;
+  grid-row-end:span 2;
+}
+
+@media (min-width:54.5em){
+  .l{
+    grid-column-end: span 2;
+    grid-row-end:span 2;
+  }  
+}
+
+
+
+
+.footer {
+    opacity:0;
+    -moz-animation: anim 1s linear forwards 1s;
+    -webkit-animation: anim 1s linear forwards 1s;
+    -o-animation: anim 1s linear forwards 1s;
+    -ms-animation: anim 1s linear forwards 1s;
+    animation: anim 1s linear forwards 1s;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black ;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}
